@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="994,775">
+    <VerticalLayout width="995" height="775" bkimage="0f.jpg" bkcolor="#FFE9FFE9">
+        <HorizontalLayout width="995" height="40">
+            <Button name="BTN_CLOSE" text="关闭" float="true" pos="947,2,0,0" width="45" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_over.bmp" hotimage="button_nor.bmp" pushedimage="button_down.bmp" />
+            <Button name="BTN_MIN" text="最小化" float="true" pos="828,2,0,0" width="45" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_over.bmp" hotimage="button_nor.bmp" pushedimage="button_down.bmp" />
+            <Button name="BTN_MAX" text="最大化" float="true" pos="887,2,0,0" width="45" height="35" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_over.bmp" hotimage="button_nor.bmp" pushedimage="button_down.bmp" />
+        </HorizontalLayout>
+        <HorizontalLayout width="995" height="50">
+            <Option text="员工操作" float="true" pos="9,5,0,0" width="149" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="tab_hot.bmp" hotimage="tab_normal.bmp" pushedimage="tab_select.bmp" group="true" selected="true" />
+            <Option text="商品操作" float="true" pos="164,5,0,0" width="149" height="40" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="tab_hot.bmp" hotimage="tab_normal.bmp" pushedimage="tab_select.bmp" group="true" />
+        </HorizontalLayout>
+        <TabLayout name="tablayout" width="995" height="775">
+            <VerticalLayout name="windowinit" width="800" height="530">
+                <Combo name="COM_SEX" text="请选择性别" float="true" pos="113,4,0,0" width="104" height="40" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" pushedimage="Combo_over.bmp" dropboxsize="0,150">
+                    <ListLabelElement text="男" />
+                    <ListLabelElement text="女"/>
+                    <Edit float="true" pos="-217,-134,0,0" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" />
+                </Combo>
+                <Edit name="EDIT_USER_TEL" text="请输入电话" float="true" pos="449,4,0,0" width="98" height="40" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Edit name="EDIT_SALARY" text="请输入薪资" float="true" pos="560,4,0,0" width="98" height="40" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Combo name="BY_GROUP_SELECT" text="无查询条件" float="true" pos="682,4,0,0" width="100" height="40" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" pushedimage="Combo_over.bmp" dropboxsize="0,150">
+                    <ListLabelElement />
+                    <ListLabelElement />
+                    <ListLabelElement />
+                    <ListLabelElement />
+                    <ListLabelElement />
+                    <ListLabelElement />
+                </Combo>
+                <List name="ListEmployeeInfo" float="true" pos="10,60,0,0" width="780" height="405" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF">
+                    <ListHeader>
+                        <ListHeaderItem text="姓名" width="139" height="40" bkcolor="#FFB4B4B4" minwidth="16" textcolor="#FF000000" sepwidth="4" align="center" />
+                        <ListHeaderItem text="性别" width="90" height="40" bkcolor="#FFB4B4B4" minwidth="16" textcolor="#FF000000" sepwidth="4" align="center" />
+                        <ListHeaderItem text="生日" width="123" height="40" bkcolor="#FFB4B4B4" minwidth="16" textcolor="#FF000000" sepwidth="4" align="center" />
+                        <ListHeaderItem text="职务" width="112" height="40" bkcolor="#FFB4B4B4" minwidth="16" textcolor="#FF000000" sepwidth="4" align="center" />
+                        <ListHeaderItem text="联系方式" width="162" height="40" bkcolor="#FFB4B4B4" minwidth="16" textcolor="#FF000000" sepwidth="4" align="center" />
+                        <ListHeaderItem text="薪资" width="152" height="40" bkcolor="#FFB4B4B4" minwidth="16" textcolor="#FF000000" sepwidth="4" align="center" />
+                    </ListHeader>
+                </List>
+                <Edit name="EDIT_USER_NAME" text="请输入用户" float="true" pos="7,4,0,0" width="98" height="40" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Edit name="EDIT_USER_BRITH" text="XXXX-XX-XX" float="true" pos="225,4,0,0" width="98" height="40" bkcolor="#FFFFFFFF" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Combo name="COM_POSITION" float="true" pos="337,4,0,0" width="104" height="40" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" normalimage="Combo_nor.bmp" pushedimage="Combo_over.bmp" dropboxsize="0,150">
+                    <ListLabelElement />
+                    <ListLabelElement />
+                    <ListLabelElement />
+                </Combo>
+            </VerticalLayout>
+        </TabLayout>
+    </VerticalLayout>
+</Window>
